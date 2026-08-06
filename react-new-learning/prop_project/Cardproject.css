@@ -1,0 +1,33 @@
+.parent{
+    padding: 0px;
+    margin: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectcard{
+    height: 300px;
+    width: 250px;
+    padding : 15px;
+    background-color: rgb(242, 230, 230);
+    border: solid black;
+    border-radius: 50px;
+}
+
+.projectcard .top{
+    display: flex;
+    align-items: center;
+}
+
+.top img{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    object-fit: cover;
+}
+
+.top button{
+    display: flex;
+    align-items: center;
+}

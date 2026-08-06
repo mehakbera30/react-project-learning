@@ -2,17 +2,14 @@ import React, { Fragment } from 'react'
 import { use } from 'react'
 import "./App.css";
 import Newcard from '../props/Newcard';
-import spider from './assets/spider.png'
-import pika from './assets/pika.png'
+import Cardproject from '../prop_project/Cardproject';
+// import spider from './assets/spider.png'
+// import pika from './assets/pika.png'
 
 const App = () => {
   return (
     <div className='parent'>
-        {/* <Newcard/>
-        <Newcard/>
-        <Newcard/> */}
-        <Newcard name="mehak" age={18} img={pika}/>
-        <Newcard name="salani" age={21} img={spider}/>
+        <Cardproject/>
     </div>
   )
 }
@@ -51,5 +48,15 @@ export default App
 //   )
 // }
 
-
+//props : its is like a function in which we pass the pass to props
+// the transfer of data is only possible from main to components not <vice-versa>
+// in app we pass the value to props and in component the value is obtain
+// for example :-
+//  <div className='parent'>
+//         {/* <Newcard/>
+//         <Newcard/>
+//         <Newcard/> */}
+//         <Newcard name="mehak" age={18} img={pika}/>
+//         <Newcard name="salani" age={21} img={spider}/>
+//     </div>
 
