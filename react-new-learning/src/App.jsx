@@ -10,6 +10,8 @@ const App = () => {
   return (
     <div className='parent'>
         <Cardproject/>
+        <Cardproject/>
+        <Cardproject/>
     </div>
   )
 }
