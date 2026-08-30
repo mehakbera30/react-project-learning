@@ -1,29 +1,32 @@
-import React from 'react'
-import './Cardproject.css';
-import {Bookmark} from 'lucide-react'
+import { Bookmark } from 'lucide-react'
+import "./Cardproject.css";
+const Card = (props) => {
 
-const Cardproject = () => {
-  return (
-    <div className='parent'>
-        <div className='projectcard'>
-
-            <div className='top'>
-               <img src='https://th.bing.com/th/id/OIP.dLl9UyA6y1GTydI-npnoygHaHv?w=180&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3' alt='amazon'></img>
-               <button>Save me <Bookmark/></button>
+    return (
+        <div className="card">
+            <div>
+                <div className="top">
+                    <img src={props.brandLogo} alt="image" />
+                    <button>Save <Bookmark size={10} /> </button>
+                </div>
+                <div className="center">
+                    <h3>{props.company} <span>{props.datePosted}</span></h3>
+                    <h2>{props.post}</h2>
+                    <div className='tag'>
+                        <h4>{props.tag1}</h4>
+                        <h4>{props.tag2}</h4>
+                    </div>
+                </div>
             </div>
-
-            <div className='center'>
-             <h2>Amazon</h2>
-             <h1>Senior UI/UX Designer</h1>
-            </div>
-
-            <div className='bottom'>
-             <h3> $120</h3>
-             <h3>Mumbai, Delhi</h3>
+            <div className="bottom">
+                <div>
+                    <h3>{props.pay}</h3>
+                    <p>{props.location}</p>
+                </div>
+                <button>Apply Now</button>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
-export default Cardproject
+export default Card
