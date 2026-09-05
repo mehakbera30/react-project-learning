@@ -1,12 +1,33 @@
 import React from 'react'
 import Navbar from './components/section1/Navbar'
-import Page1content from './components/section1/Page1content'
+import Section1 from './components/section1/section1'
 
+const users = [
+  {img :'https://i.pinimg.com/736x/a9/3c/05/a93c0530952b90e37e0ecefec4799540.jpg',
+   intro :'lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ipsa.',
+   tag:'satisfied'
+  },
+
+  {img :'https://i.pinimg.com/736x/a9/3c/05/a93c0530952b90e37e0ecefec4799540.jpg',
+   intro :'lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ipsa.  ',
+   tag:'satisfied'
+  },
+
+  {img :'https://i.pinimg.com/736x/a9/3c/05/a93c0530952b90e37e0ecefec4799540.jpg',
+   intro :'lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ipsa.',
+   tag:'satisfied'
+  },
+
+  {img :'https://i.pinimg.com/736x/a9/3c/05/a93c0530952b90e37e0ecefec4799540.jpg',
+   intro :'lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ipsa.',
+   tag:'satisfied'
+  },
+
+]
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <Page1content />
+      <Section1 users={users}/>
     </div>
   )
 }

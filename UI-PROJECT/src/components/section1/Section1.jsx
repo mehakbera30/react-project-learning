@@ -1,11 +1,13 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Page1content from './Page1content'
-const Section1 = () => {
+
+const Section1 = (props) => {
+  console.log(props)
   return (
-    <div className = 'h-screen w-full bg-red-200'>
+    <div className = 'h-screen bg-white w-full '>
     <Navbar />
-    <Page1content />
+    <Page1content  />
     </div>
   )
 }
